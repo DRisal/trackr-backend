@@ -74,6 +74,7 @@ public class ApiWebMvcConfiguration extends RepositoryRestMvcConfiguration {
      */
     @Override
     public void addFormatters(FormatterRegistry registry) {
+        super.addFormatters(registry);
         registry.addConverter(dateConverter());
     }
 

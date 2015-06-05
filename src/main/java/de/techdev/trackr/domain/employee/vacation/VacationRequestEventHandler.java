@@ -60,7 +60,7 @@ public class VacationRequestEventHandler {
 
     @HandleBeforeLinkDelete
     @PreAuthorize("denyAll()")
-    public void denyLinks(VacationRequest vacationRequest) {
+    public void denyLinks(VacationRequest vacationRequest, Object link) {
         //deny all, cannot be called
     }
 

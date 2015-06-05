@@ -34,7 +34,7 @@ public class WorkTimeEventHandler {
 
     @HandleBeforeLinkDelete
     @PreAuthorize("denyAll()")
-    public void checkDeleteLinkAuthority(WorkTime workTime) {
+    public void checkDeleteLinkAuthority(WorkTime workTime, Object link) {
         //deny all, cannot be called
     }
 }
